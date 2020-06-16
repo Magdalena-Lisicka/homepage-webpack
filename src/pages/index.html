@@ -1,153 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
+    <title>My Website development</title>
 
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="pwa/apple-icon-180.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="pwa/apple-icon-167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="pwa/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="pwa/apple-icon-120.png"
-    />
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-2732.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2732-2048.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2388.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2388-1668.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2224.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2224-1668.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1536-2048.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-1536.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2688.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2688-1242.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1125-2436.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2436-1125.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-828-1792.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1792-828.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2208.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2208-1242.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-750-1334.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1334-750.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-640-1136.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1136-640.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
+ 
   </head>
+
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <header class="header">   
+      <button class="hamburger hamburger--js" aria-label="Otworz Menu"> Menu </button>
+      <nav class="navigation navigation--js">
+        <a class="navigation__link navigation__link--homepage" href="index.html" >Strona Glowna</a>
+        <a class="navigation__link" href="nauka-html.html" >Nauka html</a>
+        <a class="navigation__link" href="nauka-css.html" >Nauka css</a>
+        <a class="navigation__link" href="nauka-js.html" >Nauka js</a>        
+      </nav>
+     
+      
+    </header>
+    
+
+    <main class="main">
+      
+      <header class="main__header" id="top">
+        <h1 class="main__heading main__heading--js" id="name">
+         
+          NAUKA FRONTENDU
+        </h1>
+        <p>Od poczatki dnia minelo:<span class="time--js"></span></p>
+       
+        
+       <button class="action--js"> Change header</button> 
+      
+      </header>
+      <div class="section">
+        <section id="notatki" class="focus">
+          <h2 class="title">Kurs WTE</h2>
+          <input class="input">
+          <div class="article">
+            <article>
+              <img class="about__picture" src="../assets/img/Misie.jpg" alt="Misie" />
+              <h3>
+                1. Tydzien Pierwszy
+              </h3>
+              <p class="week-summary__description--js">
+                1. HEAD All "settings" has to be included into
+                <b>"head" </b>tag;<br />
+                2. MAIN - main content of the webpage with margins ( TBC )
+                <br />
+                3. BODY: Everything within "body" tags is visible for the
+                user;<br />
+                4. "h1-h6" - headings, the only tags which have nimber in HTML,
+                <br />
+                Adjusted from the biggest font (h1) to the smallest (h6)<br />
+                5. I am on <a href="https://cotenfrontend.pl">WTF</a> <br />
+                6. the above is an external link <br />
+              </p>
+            </article>
+          </div>
+
+          <div class="article">
+            <article>
+              <h3>
+                2. Tydzien Drugi
+              </h3>
+              <p>
+                1. Format ducument : ctr+shift+P - this correct the layot of the
+                syntax 2. ctr+Z - go back
+              </p>
+            </article>
+          </div>
+
+          <div class="article">
+            <article>
+              <h3>
+                3.Tydzien Trzeci
+              </h3>
+              <p>
+                1. All sections and articles should have headings; 2. How to
+                comment out in html ? TBC with Maciek
+              </p>
+            </article>
+          </div>
+          <div class="article">
+            <article>
+              <h3>
+                4. Tydzien Czwarty
+              </h3>
+              <p>
+                1. Emmet - enable readeable syntax, and all prompts ( I downloaded
+                the forst from the top )
+              </p>
+              <p>
+                2. Prittier - to improve the layout of the script
+              </p>
+              <p>
+                Go Live extension , but all will have to be checked.
+              </p>
+            </article>
+
+          </div>
+          
+
+          <div class="article">
+            <article>
+              <h3>
+                5. Script/Syntax Checker
+              </h3>
+              <p>
+                W3 Nu.HTML.checker , settings: "show tick source", check by text
+                imput
+              </p>
+            </article>
+          </div>
+
+          <div class="article">
+            <article>
+              <h3>
+                6. w3c
+              </h3>
+              <p>
+                Cala specyfikacja ktora dotyczy html i jego standartow
+              </p>
+            </article>
+          </div>
+        </section>
+      </div class="article">
+
+      <aside class="aside">
+          <h2> Useful Links </h2>
+          <p>
+          Pellentesque habitant morbi tristique senectus et netus et malesuada
+          fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
+          ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
+          egestas semper.
+        </p>
+        <p>
+          wiecej o HTML na <a href="#notatki">Read notatki</a>
+        </p>         
+        </aside>
+    </main>
+    <footer class="footer">
+      glendinning avenue weymouth <a href="#top">back to top</a>
+      <script src="main.js"></script>
+      
+    </footer>
   </body>
 </html>
