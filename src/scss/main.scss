@@ -64,9 +64,17 @@ h2 {
   color: #914a4a;
 }
 
-h3 {
+.header3 {
   font-style: italic;
   color: salmon;
+  transition: transform 1s linear;
+  background: rgb(0, 255, 213);
+  transform-origin: top left;
+  width: 200px;
+  height: 40px;
+  &:hover {
+    transform:scale(2);
+  }
 }
 
 .header {
@@ -79,6 +87,7 @@ h3 {
   width: 100%;
   top: 0;
 }
+
 
 .input:focus {
   border: 3px solid yellow;
